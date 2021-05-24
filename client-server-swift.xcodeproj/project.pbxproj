@@ -13,6 +13,13 @@
 		BC5D5A30265B312E00D50529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D5A2E265B312E00D50529 /* Main.storyboard */; };
 		BC5D5A32265B313000D50529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5D5A31265B313000D50529 /* Assets.xcassets */; };
 		BC5D5A35265B313000D50529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D5A33265B313000D50529 /* LaunchScreen.storyboard */; };
+		BC5D5A41265B3E5300D50529 /* AccountViewControlleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A40265B3E5300D50529 /* AccountViewControlleViewController.swift */; };
+		BC5D5A43265B3E6D00D50529 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A42265B3E6D00D50529 /* DetailViewController.swift */; };
+		BC5D5A46265B408D00D50529 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A45265B408D00D50529 /* Account.swift */; };
+		BC5D5A49265B6BB000D50529 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A48265B6BB000D50529 /* ObserverViewController.swift */; };
+		BC5D5A4C265B706100D50529 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A4B265B706100D50529 /* NotificationCenterViewController.swift */; };
+		BC5D5A4F265B7C4E00D50529 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A4E265B7C4E00D50529 /* MainViewController.swift */; };
+		BC5D5A51265B7C6900D50529 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A50265B7C6900D50529 /* FruitsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		BC5D5A31265B313000D50529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5D5A34265B313000D50529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5D5A36265B313000D50529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5D5A40265B3E5300D50529 /* AccountViewControlleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewControlleViewController.swift; sourceTree = "<group>"; };
+		BC5D5A42265B3E6D00D50529 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BC5D5A45265B408D00D50529 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		BC5D5A48265B6BB000D50529 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		BC5D5A4B265B706100D50529 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		BC5D5A4E265B7C4E00D50529 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BC5D5A50265B7C6900D50529 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +100,56 @@
 		BC5D5A3E265B31F600D50529 /* Lesson-1 */ = {
 			isa = PBXGroup;
 			children = (
-				BC5D5A2C265B312E00D50529 /* ViewController.swift */,
+				BC5D5A4D265B7C3600D50529 /* Delegation */,
+				BC5D5A4A265B703300D50529 /* NotificationCenter */,
+				BC5D5A47265B6B7D00D50529 /* Observer-1 */,
+				BC5D5A3F265B3C4300D50529 /* Singleton */,
 			);
 			path = "Lesson-1";
+			sourceTree = "<group>";
+		};
+		BC5D5A3F265B3C4300D50529 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D5A44265B406D00D50529 /* Service */,
+				BC5D5A2C265B312E00D50529 /* ViewController.swift */,
+				BC5D5A40265B3E5300D50529 /* AccountViewControlleViewController.swift */,
+				BC5D5A42265B3E6D00D50529 /* DetailViewController.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		BC5D5A44265B406D00D50529 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D5A45265B408D00D50529 /* Account.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BC5D5A47265B6B7D00D50529 /* Observer-1 */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D5A48265B6BB000D50529 /* ObserverViewController.swift */,
+			);
+			path = "Observer-1";
+			sourceTree = "<group>";
+		};
+		BC5D5A4A265B703300D50529 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D5A4B265B706100D50529 /* NotificationCenterViewController.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		BC5D5A4D265B7C3600D50529 /* Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D5A4E265B7C4E00D50529 /* MainViewController.swift */,
+				BC5D5A50265B7C6900D50529 /* FruitsViewController.swift */,
+			);
+			path = Delegation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5D5A4C265B706100D50529 /* NotificationCenterViewController.swift in Sources */,
+				BC5D5A51265B7C6900D50529 /* FruitsViewController.swift in Sources */,
+				BC5D5A41265B3E5300D50529 /* AccountViewControlleViewController.swift in Sources */,
+				BC5D5A46265B408D00D50529 /* Account.swift in Sources */,
 				BC5D5A2D265B312E00D50529 /* ViewController.swift in Sources */,
+				BC5D5A43265B3E6D00D50529 /* DetailViewController.swift in Sources */,
+				BC5D5A49265B6BB000D50529 /* ObserverViewController.swift in Sources */,
+				BC5D5A4F265B7C4E00D50529 /* MainViewController.swift in Sources */,
 				BC5D5A29265B312E00D50529 /* AppDelegate.swift in Sources */,
 				BC5D5A2B265B312E00D50529 /* SceneDelegate.swift in Sources */,
 			);

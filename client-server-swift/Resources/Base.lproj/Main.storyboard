@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RT3-aQ-bQ1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6eZ-Uq-dla">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -255,6 +255,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dH-Nu-G6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+        <!--Network View Controller-->
+        <scene sceneID="wah-x3-3BH">
+            <objects>
+                <viewController id="Vx7-pG-MnR" customClass="NetworkViewController" customModule="client_server_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sac-gn-JCv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="scm-MK-vNI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAf-WJ-etv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1055" y="-1804"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="gYU-rd-MAM">
+            <objects>
+                <viewController id="6eZ-Uq-dla" customClass="AuthViewController" customModule="client_server_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Etz-ZD-x9l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lj-IK-1dT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T3k-4W-MZp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T3k-4W-MZp" firstAttribute="bottom" secondItem="4Lj-IK-1dT" secondAttribute="bottom" id="3k9-FB-dGp"/>
+                            <constraint firstItem="4Lj-IK-1dT" firstAttribute="top" secondItem="T3k-4W-MZp" secondAttribute="top" id="BDY-n9-5U6"/>
+                            <constraint firstItem="4Lj-IK-1dT" firstAttribute="leading" secondItem="T3k-4W-MZp" secondAttribute="leading" id="NvQ-dh-aKs"/>
+                            <constraint firstItem="T3k-4W-MZp" firstAttribute="trailing" secondItem="4Lj-IK-1dT" secondAttribute="trailing" id="rbN-gf-q45"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="4Lj-IK-1dT" id="0Nf-xM-CqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ez2-8r-gzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.260869565217391" y="-2459.5982142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yFV-bJ-lDr">

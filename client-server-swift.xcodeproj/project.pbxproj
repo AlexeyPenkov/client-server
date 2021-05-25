@@ -18,7 +18,7 @@
 		BC5D5A46265B408D00D50529 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A45265B408D00D50529 /* Account.swift */; };
 		BC5D5A49265B6BB000D50529 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A48265B6BB000D50529 /* ObserverViewController.swift */; };
 		BC5D5A4C265B706100D50529 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A4B265B706100D50529 /* NotificationCenterViewController.swift */; };
-		BC5D5A4F265B7C4E00D50529 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A4E265B7C4E00D50529 /* MainViewController.swift */; };
+		BC5D5A4F265B7C4E00D50529 /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A4E265B7C4E00D50529 /* ChooseFruitViewController.swift */; };
 		BC5D5A51265B7C6900D50529 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A50265B7C6900D50529 /* FruitsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		BC5D5A45265B408D00D50529 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		BC5D5A48265B6BB000D50529 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
 		BC5D5A4B265B706100D50529 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
-		BC5D5A4E265B7C4E00D50529 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BC5D5A4E265B7C4E00D50529 /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
 		BC5D5A50265B7C6900D50529 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 		BC5D5A4D265B7C3600D50529 /* Delegation */ = {
 			isa = PBXGroup;
 			children = (
-				BC5D5A4E265B7C4E00D50529 /* MainViewController.swift */,
+				BC5D5A4E265B7C4E00D50529 /* ChooseFruitViewController.swift */,
 				BC5D5A50265B7C6900D50529 /* FruitsViewController.swift */,
 			);
 			path = Delegation;
@@ -229,7 +229,7 @@
 				BC5D5A2D265B312E00D50529 /* ViewController.swift in Sources */,
 				BC5D5A43265B3E6D00D50529 /* DetailViewController.swift in Sources */,
 				BC5D5A49265B6BB000D50529 /* ObserverViewController.swift in Sources */,
-				BC5D5A4F265B7C4E00D50529 /* MainViewController.swift in Sources */,
+				BC5D5A4F265B7C4E00D50529 /* ChooseFruitViewController.swift in Sources */,
 				BC5D5A29265B312E00D50529 /* AppDelegate.swift in Sources */,
 				BC5D5A2B265B312E00D50529 /* SceneDelegate.swift in Sources */,
 			);

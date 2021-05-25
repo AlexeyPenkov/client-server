@@ -42,30 +42,41 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Choose Fruit View Controller-->
         <scene sceneID="fbS-fm-m8R">
             <objects>
-                <viewController id="c97-WI-rS9" customClass="MainViewController" customModule="client_server_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c97-WI-rS9" customClass="ChooseFruitViewController" customModule="client_server_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PJZ-my-cK9" customClass="MainViewCo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dML-I2-WkI">
-                                <rect key="frame" x="186" y="216" width="42" height="21"/>
+                                <rect key="frame" x="86" y="216" width="228" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5a7-Oh-34G">
+                                <rect key="frame" x="155" y="377" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Выбрать фрукт"/>
+                                <connections>
+                                    <action selector="showFruitsViewController:" destination="c97-WI-rS9" eventType="touchUpInside" id="c8o-aA-9o0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l2o-qT-W8G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="XT6-LB-AYo"/>
+                    <connections>
+                        <outlet property="fruitLabel" destination="dML-I2-WkI" id="tYA-sa-Yzv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Z3-c7-w8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="-981"/>
+            <point key="canvasLocation" x="-213.04347826086959" y="-981.02678571428567"/>
         </scene>
         <!--Fruits View Controller-->
         <scene sceneID="nZA-Wp-ad9">
@@ -90,6 +101,7 @@
                             <outlet property="delegate" destination="oSa-rn-FZM" id="VHV-Aj-dRl"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="pze-B7-47B"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW5-yr-wLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

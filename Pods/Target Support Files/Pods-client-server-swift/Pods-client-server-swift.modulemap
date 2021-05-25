@@ -1,0 +1,6 @@
+framework module Pods_client_server_swift {
+  umbrella header "Pods-client-server-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

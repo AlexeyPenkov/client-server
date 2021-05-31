@@ -35,8 +35,20 @@ final class WeatherService {
         let url = baseUrl+path
             
         // делаем запрос
-        AF.request(url, method: .get, parameters: params).responseJSON { response in
-                print(response.value)
+        AF.request(url, method: .get, parameters: params).responseData{ response in
+            guard let data = response.value else { return }
+            
+            //print(data.prettyJSON as Any)
+            
+            let weatherResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
+            
+            let weatherList = weatherResponse?.list
+            
+            guard let weather = weatherList?.first else {return}
+            
+            print(weather.dtTxt)
+            
+            //print(weather)
             }
     }
 }

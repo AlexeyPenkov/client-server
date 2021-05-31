@@ -24,6 +24,10 @@
 		BC5D5A5A265C9BB500D50529 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D5A59265C9BB500D50529 /* NetworkViewController.swift */; };
 		BC8C30B7265CD7E800C91E23 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C30B6265CD7E800C91E23 /* WeatherService.swift */; };
 		BC8C30B9265CDC4900C91E23 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C30B8265CDC4900C91E23 /* AuthViewController.swift */; };
+		BC8C30CC266465FD00C91E23 /* MappingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C30CB266465FD00C91E23 /* MappingViewController.swift */; };
+		BC8C30CE266469BF00C91E23 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C30CD266469BF00C91E23 /* Data+PrettyJSON.swift */; };
+		BC8C30D0266476F200C91E23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C30CF266476F200C91E23 /* User.swift */; };
+		BC8C30D42664808100C91E23 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C30D32664808000C91E23 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		BC5D5A59265C9BB500D50529 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		BC8C30B6265CD7E800C91E23 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		BC8C30B8265CDC4900C91E23 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		BC8C30CB266465FD00C91E23 /* MappingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingViewController.swift; sourceTree = "<group>"; };
+		BC8C30CD266469BF00C91E23 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		BC8C30CF266476F200C91E23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC8C30D32664808000C91E23 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +99,9 @@
 		BC5D5A27265B312E00D50529 /* client-server-swift */ = {
 			isa = PBXGroup;
 			children = (
-				BC5D5A58265C9B7F00D50529 /* Lesson-2 */,
 				BC5D5A3C265B316600D50529 /* App */,
+				BC8C30CA266465DC00C91E23 /* lesson-3 */,
+				BC5D5A58265C9B7F00D50529 /* Lesson-2 */,
 				BC5D5A3E265B31F600D50529 /* Lesson-1 */,
 				BC5D5A3D265B318900D50529 /* Resources */,
 			);
@@ -178,10 +187,37 @@
 			isa = PBXGroup;
 			children = (
 				BC5D5A59265C9BB500D50529 /* NetworkViewController.swift */,
-				BC8C30B6265CD7E800C91E23 /* WeatherService.swift */,
 				BC8C30B8265CDC4900C91E23 /* AuthViewController.swift */,
 			);
 			path = "Lesson-2";
+			sourceTree = "<group>";
+		};
+		BC8C30CA266465DC00C91E23 /* lesson-3 */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C30CB266465FD00C91E23 /* MappingViewController.swift */,
+				BC8C30B6265CD7E800C91E23 /* WeatherService.swift */,
+				BC8C30D12664782C00C91E23 /* Models */,
+				BC8C30D22664783800C91E23 /* Extensions */,
+			);
+			path = "lesson-3";
+			sourceTree = "<group>";
+		};
+		BC8C30D12664782C00C91E23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C30CF266476F200C91E23 /* User.swift */,
+				BC8C30D32664808000C91E23 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC8C30D22664783800C91E23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C30CD266469BF00C91E23 /* Data+PrettyJSON.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D3B76D37B40365643185FDDC /* Pods */ = {
@@ -307,9 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8C30CE266469BF00C91E23 /* Data+PrettyJSON.swift in Sources */,
+				BC8C30D42664808100C91E23 /* Weather.swift in Sources */,
 				BC5D5A4C265B706100D50529 /* NotificationCenterViewController.swift in Sources */,
 				BC5D5A51265B7C6900D50529 /* FruitsViewController.swift in Sources */,
 				BC5D5A5A265C9BB500D50529 /* NetworkViewController.swift in Sources */,
+				BC8C30D0266476F200C91E23 /* User.swift in Sources */,
 				BC5D5A41265B3E5300D50529 /* AccountViewControlleViewController.swift in Sources */,
 				BC8C30B7265CD7E800C91E23 /* WeatherService.swift in Sources */,
 				BC5D5A46265B408D00D50529 /* Account.swift in Sources */,
@@ -318,6 +357,7 @@
 				BC8C30B9265CDC4900C91E23 /* AuthViewController.swift in Sources */,
 				BC5D5A49265B6BB000D50529 /* ObserverViewController.swift in Sources */,
 				BC5D5A4F265B7C4E00D50529 /* ChooseFruitViewController.swift in Sources */,
+				BC8C30CC266465FD00C91E23 /* MappingViewController.swift in Sources */,
 				BC5D5A29265B312E00D50529 /* AppDelegate.swift in Sources */,
 				BC5D5A2B265B312E00D50529 /* SceneDelegate.swift in Sources */,
 			);
